@@ -1,2 +1,8 @@
 def fact(number):
-  return number*6
+  temp = number
+  if temp == 1:
+    return 1
+  else:
+    return number * fact(number-1)
+  
+print(fact(5))
