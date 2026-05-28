@@ -5,4 +5,6 @@ def fact(number):
   else:
     return number * fact(number-1)
   
-print(fact(5))
+number = [i for i in range(1,11)]
+for i in number:
+  print(f'{i} is {fact(i):>10}')
